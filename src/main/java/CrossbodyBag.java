@@ -36,12 +36,14 @@ class CrossbodyBag extends Bag {
         super(color, capacity);
         this.NumberOfStraps = NumberOfStraps;
     }
-    public void enhance(){
-        super       .increaseCapacity(2);
-    }
 
     public int getNumberOfStraps() {
         return this.NumberOfStraps;
+    }
+
+    @Override
+    public void enhance(){
+        super.increaseCapacity(2);
     }
 
     @Override
